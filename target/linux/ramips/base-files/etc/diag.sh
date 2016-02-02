@@ -81,6 +81,9 @@ get_status_led() {
 	w502u)
 		status_led="$board:blue:wps"
 		;;
+	comfast)
+		status_led="$broad:blue:power"
+        ;;
 	dap-1350|\
 	na930|\
 	rt-n13u|\

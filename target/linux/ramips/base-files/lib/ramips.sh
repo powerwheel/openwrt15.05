@@ -328,6 +328,9 @@ ramips_board_detect() {
 	*"RT-N14U")
 		name="rt-n14u"
 		;;
+	*"comfast")
+		name="comfast"
+		;;
 	*"RT-N15")
 		name="rt-n15"
 		;;

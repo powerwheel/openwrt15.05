@@ -903,6 +903,7 @@ Image/Build/Profile/ZTE-Q7=$(call BuildFirmware/Default8M/$(1),$(1),zte-q7,ZTE-Q
 Image/Build/Profile/ZBT-WA05=$(call BuildFirmware/Default8M/$(1),$(1),zbt-wa05,ZBT-WA05)
 Image/Build/Profile/ZBT-WR8305RT=$(call BuildFirmware/Default8M/$(1),$(1),zbt-wr8305rt,ZBT-WR8305RT)
 Image/Build/Profile/ArcherC20i=$(call BuildFirmware/Tplink/$(1),$(1),ArcherC20i,ArcherC20i)
+Image/Build/Profile/COMFAST=$(call BuildFirmware/Default8M/$(1),$(1),comfast,COMFAST)
 microwrt_mtd_size=16515072
 Image/Build/Profile/MicroWRT=$(call BuildFirmware/CustomFlash/$(1),$(1),microwrt,MicroWRT,$(microwrt_mtd_size))
 Image/Build/Profile/TINY-AC=$(call BuildFirmware/Default8M/$(1),$(1),tiny-ac,TINY-AC)
@@ -944,6 +945,7 @@ define Image/Build/Profile/Default
 	$(call Image/Build/Profile/ArcherC20i,$(1))
 	$(call Image/Build/Profile/MicroWRT,$(1))
 	$(call Image/Build/Profile/TINY-AC,$(1))
+	$(call Image/Build/Profile/COMFAST,$(1))
 endef
 endif
 

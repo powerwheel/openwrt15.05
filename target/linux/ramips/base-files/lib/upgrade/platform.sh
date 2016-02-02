@@ -141,6 +141,13 @@ platform_check_image() {
 		}
 		return 0
 		;;
+	comfast)
+		[ "$magic" != "27051956" ] && {
+			echo "Invalid image type."
+			return 1
+		}
+		return 0
+		;;
 	ar670w)
 		[ "$magic" != "6d000080" ] && {
 			echo "Invalid image type."

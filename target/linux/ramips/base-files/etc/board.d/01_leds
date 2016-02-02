@@ -222,6 +222,13 @@ rt-n14u)
 	set_wifi_led "$board:blue:air"
 	set_usb_led "$board:blue:usb"
 	;;
+comfast)
+	ucidef_set_led_default "power" "power" "$board:blue:power" "1"
+	ucidef_set_led_netdev "lan" "lan" "$board:blue:lan" eth0.1
+	ucidef_set_led_netdev "wan" "wan" "$board:blue:wan" eth0.2
+	set_wifi_led "$board:blue:air"
+	set_usb_led "$board:blue:usb"
+	;;
 tiny-ac)
 	set_wifi_led "$board:orange:wifi"
 	set_usb_led "$board:green:usb"
